@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Purple Moon Cuisine</title>
+  <link href="css/main.css" rel="stylesheet">
+  <!-- Owl Carousel Styles -->
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Croissant+One" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <div id="Logo">
+        <img src="img/logo.png" alt="JJ Cuisine logo">
+      </div>
+
+      <div id="Name">
+        <h1>Purple Moon Cuisine</h1>
+      </div>
+
+<div id="rating">
+     <img src="img/star-image.png" alt="star rating">
+   </div>
+    </header>
+
+    <main>
+      <div id="carousel">
+        <div class="owl-carousel owl-theme">
+          <div><img src="img/spaghetti-pasta-pie.jpg" alt="Spaghetti pasta pie"></div>
+          <div><img src="img/vegan-meal.jpg" alt="vegan meal"></div>
+          <div><img src="img/BBQ.jpg" alt="BBQ"></div>
+          <div><img src="img/burger-fries-chicken.jpg" alt="burger-fries-chicken"></div>
+          <div><img src="img/cheesecake.jpg" alt="cheesecake"></div>
+          <div><img src="img/pizza.jpg" alt="pizza"></div>
+          <div><img src="img/grilled-seafood.jpg" alt="grilled seafood"></div>
+          <div><img src="img/rolls.jpg" alt="cinnamon rolls"></div>
+        </div>
+      </div>
+
+    <div id="hours">
+        <h2>Hours</h2>
+      <p>Open:</p>
+<ul>
+      <li>Monday thru Friday: 12 noon to 9pm</li>
+      <li>Saturday: 12 to 12</li>
+      <li>Sunday: closed</li>
+</ul>
+    </div>
+
+      <div id="member">
+      <h2>Sign up for our Royalty</h2>
+      <form action="thanks.html" method="post">
+      <fieldset>
+      <legend>Personal Info</legend>
+
+      <label for="name">Name:</label>
+      <input id="name" type="text" name="name">
+      <br>
+
+
+       <label for="address">Address:</label>
+       <input id="address" type="text" name="address">
+       <br>
+
+       <label for="city">City:</label>
+       <input id="city" type="text" name="city" size="4">
+
+       <label for="state">State:</label>
+       <input id="state" type="text" name="State" size="2" maxlength="2">
+
+       <label for="zip">Zip:</label>
+       <input id="zip" type="text" name="Zip" size="2" maxlength="5">
+
+       </fieldset>
+
+       <fieldset>
+       <legend>Order Info</legend>
+       <label for="size">Size:</label>
+       <select id="size" name="sizes">
+       <option value="x-sm">Extra Small</option>
+       <option value="sm">Small</option>
+       <option value="md">Medium</option>
+       <option value="lg">Large</option>
+       <option value="x-lg">Extra Large</option>
+       </select>
+
+
+    <label for="quantity">Quantity:</label>
+<input id="quantity" type="text" name="quantity" size="5">
+<br>
+
+</fieldset>
+
+<fieldset>
+<legend>Payment Info</legend>
+
+<label for="card-type">Card Type:</label>
+<input id="visa" type="radio" name="card_type" value="visa">
+<label for="visa">Visa</label>
+
+<input id="mc" type="radio" name="card_type" value="mc">
+<label for="mc">Master Card</label>
+
+<input id="discover" type="radio" name="card_type" value="discover">
+<label for="discover">Discover</label>
+<br>
+
+
+
+
+<label for="cc_number">Credit Card Number:</label>
+<input id="cc_number" type="type" name"cc_number" size="5">
+<br>
+
+</label>
+
+</fieldset>
+
+<input type="submit" value="Submit Form">
+
+</form>
+</div>
+
+      <div id="menu">
+        <h2>Menu</h2>
+         <p>Click here for our gourmet food choices</p>
+      </div>
+
+      <div id="map">
+        <h2></h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.5044856237814!2d-82.40230456836876!3d34.84354915791323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885830328ffb6b13%3A0x4b8a23743a5fa319!2sRiver+Lodge!5e0!3m2!1sen!2sus!4v1518450236543" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </main>
+
+    <footer>
+      <div id="social"></div>
+        <img  src="img/facebook_004.png" alt="Facebook Icon" align="left"></a>
+        <img  src="img/instagram_004.png" alt="Instagram Icon" align="left"></a>
+        <img  src="img/twitter_004.png" alt="Twitter Icon" align="left"></a>
+        <img src="img/pinterest_004.png" alt="pinterest icon" align="left"></a>
+
+      <div id="contact">
+        <h2>Contact info</h2>
+          <p>Email:</p>
+          <ul>
+             <li>jbabat0530@greenvilleschools.us</li>
+         </ul>
+       <p>Phone Number:</p>
+         <ul>
+            <li>(864)168-3264</li>
+        </ul>
+        </div>
+      <div id="credit">
+        <h2>By: Jackie B.</h2>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- first load jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!-- owl carousel stuff -->
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          autoplay: true,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+          dots: true,
+          items: 2,
+          loop: true,
+          margin: 10,
+      })
+    });
+  </script>
+
+</body>
+</html>

@@ -1,1 +1,1 @@
-# jj-cuisine
+# responsive-grid-template
