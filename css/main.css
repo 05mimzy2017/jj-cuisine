@@ -1,0 +1,303 @@
+/* Color Palette
+  White: #ffffff;
+  Black: #000000;
+  Medium Gray: #999999;
+  Light Gray: #dddddd;
+  Light blue: #99ffff;
+*/
+
+
+/*********** Begin Layout Styles ***********/
+body {
+     background-image: url("../img/moon.jpg");
+     background-attachment: fixed;
+     background-size: cover;
+     max-width: auto;
+}
+
+div.container {
+  /*background-color: #ffffff;*/
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px; /* disable this line if you want full-width layouts */
+}
+
+header, main, footer {
+  padding: 15px;
+  margin: 15px;
+}
+
+/* phones (base layout is mobile-first) */
+header {
+  /*border: 3px solid #990000;  disable this line once layout works */
+  display: grid;
+  font-size: 32px;
+  text-align: center;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "logo"
+    "name"
+    "rating";
+}
+
+main {
+  /*border: 3px solid #009900; disable this line once layout works */
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "carousel"
+    "member"
+    "hours"
+    "menu"
+    "map";
+}
+
+footer {
+  /*border: 3px solid #000099;disable this line once layout works */
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "social"
+    "contact"
+    "credit";
+}
+
+/* tablets and small laptops */
+@media (min-width: 600px) {
+
+  header {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "logo name rating";
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "carousel carousel carousel"
+      "member hours map"
+      "menu menu menu";
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "social contact credit";
+  }
+}
+
+/* desktops */
+@media (min-width: 900px) {
+  header {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "logo name rating";
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "carousel carousel carousel"
+      " member hours map"
+      "menu menu menu";
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "social contact credit";
+  }
+}
+
+div {
+/*  border: 1px solid #999999;  disable this line once layout works */
+/*  text-align: center;  disable this line once layout works */
+}
+
+main div {
+  /*  min-height: 80px;  disable this line once layout works */
+}
+
+div#logo {
+  grid-area: logo;
+}
+
+div#name {
+  grid-area: name;
+}
+
+div#rating {
+  grid-area: rating;
+}
+
+div#carousel {
+  grid-area: carousel;
+  overflow: hidden;
+}
+
+div#member{
+  grid-area: member;
+}
+
+div#hours {
+  grid-area: hours;
+}
+
+div#menu {
+  grid-area: menu;
+}
+
+div#map {
+  grid-area: map;
+}
+
+div#social {
+  grid-area: social;
+  color: #ffffff;
+}
+
+div#contact {
+  grid-area: contact;
+}
+
+div#credit{
+  grid-area: credit;
+}
+/*********** End Layout Styles ***********/
+
+
+/*********** Begin Content Styles ***********/
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 50px;
+}
+
+h2 {
+    color: #ffffff;
+   font-family: 'Croissant One', cursive;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+/* Paragraphs and lists */
+
+p {
+  color:  #ffffff;
+  font-size: 20px;
+}
+
+ol {
+
+}
+
+ul {
+    color: #ffffff;
+}
+
+li {
+   color: #ffffff;
+}
+
+/* tables */
+
+table {
+
+}
+
+caption {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+/* images */
+img {
+   max-width: 100%
+}
+
+iframe {
+    max-width: 100%
+}
+
+/* links */
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
+/* forms */
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #3CBC8D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-szie: 20px;
+}
+
+fieldset{
+      border: 2px solid #3CBC8D;
+      border-radius: 4px;
+      font-size: 20px;
+}
+
+legend{
+     color: #ffffff;
+     font-size: 20px;
+}
+
+label{
+   color: #ffffff;
+   font-size:20px;
+}
+
+/*********** End Content Styles ***********/
