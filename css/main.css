@@ -160,6 +160,8 @@ div#map {
 div#social {
   grid-area: social;
   color: #ffffff;
+  border-style: dotted;
+  border-width: 10px;
 }
 
 div#contact {
@@ -208,6 +210,7 @@ h6 {
 p {
   color:  #ffffff;
   font-size: 20px;
+  font-family: 'Courgette', cursive;
 }
 
 ol {
@@ -216,10 +219,12 @@ ol {
 
 ul {
     color: #ffffff;
+    font-family: 'Courgette', cursive;
 }
 
 li {
    color: #ffffff;
+   font-family: 'Courgette', cursive;
 }
 
 /* tables */
@@ -247,6 +252,14 @@ td {
 /* images */
 img {
    max-width: 100%
+}
+
+img.left {
+    border-radius: 20%;
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    max-width: 100%;
 }
 
 iframe {
@@ -282,22 +295,26 @@ input[type=button], input[type=submit], input[type=reset] {
     margin: 4px 2px;
     cursor: pointer;
     font-szie: 20px;
+    font-family: 'Courgette', cursive;
 }
 
 fieldset{
       border: 2px solid #3CBC8D;
       border-radius: 4px;
       font-size: 20px;
+      font-family: 'Courgette', cursive;
 }
 
 legend{
      color: #ffffff;
      font-size: 20px;
+     font-family: 'Courgette', cursive;
 }
 
 label{
    color: #ffffff;
    font-size:20px;
+   font-family: 'Courgette', cursive;
 }
 
 /*********** End Content Styles ***********/
