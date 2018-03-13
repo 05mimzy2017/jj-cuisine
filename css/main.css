@@ -19,12 +19,14 @@ div.container {
   /*background-color: #ffffff;*/
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px; /* disable this line if you want full-width layouts */
+/*  max-width: 1200px; disable this line if you want full-width layouts */
 }
 
 header, main, footer {
   padding: 15px;
   margin: 15px;
+color: #ffffff;
+font-family: 'Courgette', cursive;
 }
 
 /* phones (base layout is mobile-first) */
@@ -66,8 +68,10 @@ footer {
     "social"
     "contact"
     "credit";
+ }
+div#page-name { span 1;
+ }
 }
-
 /* tablets and small laptops */
 @media (min-width: 600px) {
 
@@ -90,8 +94,10 @@ footer {
     grid-template-areas:
     "social contact credit";
   }
-}
 
+div#page-name{ span 3;
+ }
+}
 /* desktops */
 @media (min-width: 900px) {
   header {
@@ -113,16 +119,21 @@ footer {
     grid-template-areas:
     "social contact credit";
   }
+
+  div#page-name{ span 3;
+  }
 }
 
+
 div {
-/*  border: 1px solid #999999;  disable this line once layout works */
-/*  text-align: center;  disable this line once layout works */
+  /*border: 1px solid #999999;  disable this line once layout works */
+ /*text-align: center; disable this line once layout works */
 }
 
 main div {
-  /*  min-height: 80px;  disable this line once layout works */
+   /*min-height: 80px;  disable this line once layout works */
 }
+
 
 div#logo {
   grid-area: logo;
@@ -182,19 +193,28 @@ h1 {
     color: #ffffff;
     font-family: 'Bungee Shade', cursive;
     font-size: 50px;
+
 }
 
 h2 {
     color: #ffffff;
    font-family: 'Croissant One', cursive;
+   text-align: center;
 }
 
 h3 {
-
+    color: #ffffff;
+   font-family: 'Croissant One', cursive;
+   font-size: 34px;
+   text-align: center;
 }
 
 h4 {
-
+   color: #ffffff;
+   font-size: 22px;
+   text-align: center;
+   border-style: dotted;
+   border-width: 5px;
 }
 
 h5 {
@@ -211,6 +231,17 @@ p {
   color:  #ffffff;
   font-size: 20px;
   font-family: 'Courgette', cursive;
+  text-align: center;
+}
+
+#menu p{
+        color: #ffffff;
+        text-align: center;
+}
+
+span.price{
+           color: #ffffff;
+           font-size: 22px;
 }
 
 ol {
@@ -220,11 +251,16 @@ ol {
 ul {
     color: #ffffff;
     font-family: 'Courgette', cursive;
-}
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   text-align: center;
+ }
 
 li {
    color: #ffffff;
    font-family: 'Courgette', cursive;
+   text-align: center;
 }
 
 /* tables */
@@ -289,7 +325,7 @@ a:active {
 input[type=button], input[type=submit], input[type=reset] {
     background-color: #3CBC8D;
     border: none;
-    color: white;
+    color: #ffffff;
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
