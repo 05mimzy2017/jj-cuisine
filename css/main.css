@@ -182,6 +182,35 @@ div#contact {
 div#credit{
   grid-area: credit;
 }
+div#Drinks{
+  border-style: dotted;
+  border-width: 5px;
+  border-color: #99ffff;
+}
+
+div#Appetizers{
+  border-style: dotted;
+  border-width: 5px;
+  border-color: #99ffff;
+}
+
+div#soups-and-salads{
+  border-style: dotted;
+  border-width: 5px;
+  border-color: #99ffff;
+}
+
+div#entrees{
+  border-style: dotted;
+  border-width: 5px;
+  border-color: #99ffff;
+}
+
+div#desserts{
+  border-style: dotted;
+  border-width: 5px;
+  border-color: #99ffff;
+}
 /*********** End Layout Styles ***********/
 
 
@@ -207,14 +236,15 @@ h3 {
    font-family: 'Croissant One', cursive;
    font-size: 34px;
    text-align: center;
+   border-style: dotted;
+   border-width: 5px;
 }
 
 h4 {
    color: #ffffff;
    font-size: 22px;
    text-align: center;
-   border-style: dotted;
-   border-width: 5px;
+
 }
 
 h5 {
@@ -232,6 +262,7 @@ p {
   font-size: 20px;
   font-family: 'Courgette', cursive;
   text-align: center;
+  line-height: 2;
 }
 
 #menu p{
@@ -305,19 +336,19 @@ iframe {
 /* links */
 
 a:link {
-
+      color: #ffffff;
 }
 
 a:visited {
-
+    color: #ffffff;
 }
 
 a:hover {
-
+      color: #99ffff;
 }
 
 a:active {
-
+        color: #ffffff;
 }
 
 /* forms */
